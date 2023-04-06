@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spanzuratoarea</title>
+</head>
+<body>
+    
+    <div class="box">
+        
+        <!-- Daca vrei sa pui un modal
+        <div id="modalWiner">
+            <h1>Bravo ai ghicit raspunsul la intrebarea:</h1>  
+            <h1 id="intrebareModalWiner">AICI PUI INTREBAREA.</h1>
+            <button onclick="inchideModalWin()">Reintoarce-te la Joc</button>
+        </div>
+        -->
+
+        <div class="avertizare"><span>!!!</span><div class="text">Din pacate jocul este disponibil doar pe un dispozitiv cu o dimensiune a ecranului mai mare de 800px</div><span>!!!</span></div>
+        
+        <div class="titlu">Spanzuratoarea</div>
+        
+        <div class="descriere">Foloseste literele ca sa construiesti raspunsul intrebarii.</div>
+        
+       
+        
+        <div class="displayAndScore">
+
+            <div class="scoreBoards">
+                <div class="numarIntrebariParcurse">
+                    <div class="titlu">Ai ajuns la intrebarea cu numarul</div>
+                    <div id="numarulConcretDeIntrebari">0</div>
+                </div>
+        
+                <div class="winLoseTabel">
+                    <div class="scoreWin" id="score">
+                        <div class="numeScor">Ai gasit raspunsul la</div>
+                        <div id="numarScorWin">0</div>
+                        <div class="numeScor" id="intrebariScor">intrebari</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display">
+                <div id="intrebare"></div>
+                
+                <div class="boxBigLitere">
+                    <div id="box1" class="boxLitere"></div>
+                    <div id="box2" class="boxLitere"></div>
+                    <div id="box3" class="boxLitere"></div>
+                    <div id="box4" class="boxLitere"></div>
+                    <div id="box5" class="boxLitere"></div>
+                    <div id="box6" class="boxLitere"></div>
+                    <div id="box7" class="boxLitere"></div>
+                    <div id="box8" class="boxLitere"></div>
+                    <div id="box9" class="boxLitere"></div>
+                </div>
+
+                <div class="boxInformatiLitere"> 
+                    <div class="informatiLitere" id="infLitere">
+                        <div>Cuvantul are </div>
+                        <div id="numarLitere"></div>
+                        <div> litere</div>
+                    </div>
+                    
+                    <div id="infLitereNuExista">
+                        Nu mai sunt intrebari.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="tastatura">
+            <div class="alfabet">
+                <div class="row one">
+                    <button id="q" onclick="afisareLitere('Q')">Q</button>
+                    <button onclick="afisareLitere('W')">W</button>
+                    <button onclick="afisareLitere('E')">E</button>
+                    <button onclick="afisareLitere('R')">R</button>
+                    <button onclick="afisareLitere('T')">T</button>
+                    <button onclick="afisareLitere('Y')">Y</button>
+                    <button onclick="afisareLitere('U')">U</button>
+                    <button onclick="afisareLitere('I')">I</button>
+                    <button onclick="afisareLitere('O')">O</button>
+                    <button onclick="afisareLitere('P')">P</button>
+                    <button onclick="backSpace()" id="backspace">Backspace</button>
+                </div>
+                <div class="row two">
+                    <button onclick="afisareLitere('A')">A</button>
+                    <button onclick="afisareLitere('S')">S</button>
+                    <button onclick="afisareLitere('D')">D</button>
+                    <button onclick="afisareLitere('F')">F</button>
+                    <button onclick="afisareLitere('G')">G</button>
+                    <button onclick="afisareLitere('H')">H</button>
+                    <button onclick="afisareLitere('J')">J</button>
+                    <button onclick="afisareLitere('K')">K</button>
+                    <button onclick="afisareLitere('L')">L</button>
+                </div>
+                <div class="row three">
+                    <button onclick="afisareLitere('Z')">Z</button>
+                    <button onclick="afisareLitere('X')">X</button>
+                    <button onclick="afisareLitere('C')">C</button>
+                    <button onclick="afisareLitere('V')">V</button>
+                    <button onclick="afisareLitere('B')">B</button>
+                    <button onclick="afisareLitere('N')">N</button>
+                    <button onclick="afisareLitere('M')">M</button>
+                </div>
+            </div>
+
+            <div class="butoane">
+                <button onclick="incepeJocul(1)" class="buton1">Start</button>
+                <button onclick="intrebareaUrmatoare(2)" class="buton3">Urmatoarea Intrebare</button>  
+                <button onclick="restartGame()" class="buton2">Restart Game</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
