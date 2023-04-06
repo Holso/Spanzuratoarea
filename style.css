@@ -371,4 +371,7 @@ button:active{
     .scoreBoards{
         display: none;
     }
+    .box .avertizare span{
+        display: none;
+    }
 }
